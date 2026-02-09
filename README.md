@@ -1,4 +1,4 @@
-# Awesome ApiEvent
+# ApiEvent
 
 >Uma lista organizada e prática de exemplos e recursos do projeto **ApiEvent**, uma aplicação backend desenvolvida em **Spring Boot**, focada no cadastro e gerenciamento de eventos.
 
