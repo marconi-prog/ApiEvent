@@ -1,9 +1,7 @@
 package com.eventostec.api.domain.coupon;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.eventostec.api.domain.event.Event;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,5 +20,11 @@ public class Coupon {
     @GeneratedValue
     private UUID id;
 
+    private String code;
 
+    private Integer discount;
+
+    @ManyToOne
+    @JoinColumn(name = "event_id")
+    private Event event;
 }
