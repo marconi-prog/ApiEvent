@@ -1,40 +1,40 @@
 # ApiEvent
 
->Uma lista organizada e prática de exemplos e recursos do projeto **ApiEvent**, uma aplicação backend desenvolvida em **Spring Boot**, focada no cadastro e gerenciamento de eventos.
+>A well-organized and practical collection of examples and resources from the **ApiEvent** project, a backend application developed with **Spring Boot**, focused on event registration and management.
 
->Este projeto demonstra boas práticas de arquitetura backend utilizando **Java + Spring Boot + JPA**, integração com **PostgreSQL**, testes com **Postman** e estrutura preparada para deploy na **AWS**.
+>This project demonstrates good backend architecture practices using **Java + Spring Boot + JPA**, integration with **PostgreSQL**, API testing with **Postman**, and a structure prepared for deployment on **AWS**.
 
-> **Nota**  
->> Projeto voltado para fins educacionais, aprendizado e portfólio.  
->> Não recomendado para uso direto em produção sem ajustes de segurança e escalabilidade.
-
----
-
-## 📚 Conteúdo
-
-- Visão geral do projeto
-- Tecnologias utilizadas
-- Estrutura do projeto
-- Funcionalidades
-- Endpoints principais
-- Como executar o projeto
-- Próximos passos
+> **Note**  
+>> This project is intended for educational purposes, learning, and portfolio use.  
+>> It is not recommended for direct production use without additional security and scalability adjustments.
 
 ---
 
-## 🔎 Visão geral do projeto
+## 📚 Contents
 
-A **ApiEvent** é uma API RESTful desenvolvida em **Java** com **Spring Boot**.  
-Seu objetivo é permitir o cadastro, listagem, atualização, busca e remoção de eventos, aplicando:
-
-- Arquitetura em camadas (Controller, Service, Repository)
-- Persistência de dados com JPA/Hibernate
-- Banco de dados relacional (PostgreSQL)
-- Preparação para ambiente cloud (AWS)
+- Project overview  
+- Technologies used  
+- Project structure  
+- Features  
+- Main endpoints  
+- How to run the project  
+- Next steps  
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## 🔎 Project overview
+
+**ApiEvent** is a RESTful API developed in **Java** using **Spring Boot**.  
+Its goal is to allow the creation, listing, updating, searching, and deletion of events, applying:
+
+- Layered architecture (Controller, Service, Repository)
+- Data persistence with JPA/Hibernate
+- Relational database (PostgreSQL)
+- Cloud-ready structure (AWS)
+
+---
+
+## 🚀 Technologies used
 
 - Java 17+
 - Spring Boot
@@ -48,42 +48,40 @@ Seu objetivo é permitir o cadastro, listagem, atualização, busca e remoção 
 
 ---
 
----
+## ⚙️ Features
 
-## ⚙️ Funcionalidades
-
-- Cadastrar eventos
-- Listar eventos
-- Buscar evento por ID
-- Atualizar evento
-- Remover evento
-- Persistência com PostgreSQL
-- Testes de endpoints com Postman
-- Estrutura pronta para AWS
+- Create events
+- List events
+- Get event by ID
+- Update event
+- Delete event
+- PostgreSQL persistence
+- Endpoint testing with Postman
+- AWS-ready architecture
 
 ---
 
-## 🔗 Endpoints principais
+## 🔗 Main endpoints
 
-| Método | Endpoint        | Descrição              |
+| Method | Endpoint        | Description            |
 |------|-----------------|------------------------|
-| GET  | /events         | Lista todos os eventos |
-| GET  | /events/{id}    | Busca evento por ID    |
-| POST | /events         | Cadastra evento        |
-| PUT  | /events/{id}    | Atualiza evento        |
-| DELETE | /events/{id}  | Remove evento          |
+| GET  | /events         | List all events        |
+| GET  | /events/{id}    | Get event by ID        |
+| POST | /events         | Create a new event     |
+| PUT  | /events/{id}    | Update an event        |
+| DELETE | /events/{id}  | Delete an event        |
 
 ---
 
-## 🛠️ Como executar o projeto
+## 🛠️ How to run the project
 
-### Pré-requisitos
+### Prerequisites
 
 - Java 17+
 - PostgreSQL
 - Maven
 
-### Executando localmente
+### Running locally
 
 ```bash
 git clone https://github.com/seu-usuario/apievent.git
@@ -91,29 +89,25 @@ cd apievent
 mvn spring-boot:run
 ```
 
-A aplicação estará disponível em:
+The application will be available at:
 ``` bash
 http://localhost:8080
 ``` 
 
 ---
 
-## 🗄️ Banco de dados
+🗄️ Database
 
-Exemplo de configuração no `application.properties`:
+Example configuration in application.properties:
 
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/apievent
 spring.datasource.username=postgres
-spring.datasource.password=senha
+spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 ```
+🤝 Community and Support
 
-🤝 Comunidade e Suporte
+Use the GitHub Issues tab to report bugs, suggest improvements, or ask questions about the project.
 
-Utilize a aba Issues do GitHub para relatar bugs, sugerir melhorias ou tirar dúvidas sobre o projeto.
-
-Contribuições são bem-vindas
-
-Feito com ❤️ por Marconi-prog
-
+Contributions are welcome 🚀
