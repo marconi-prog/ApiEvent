@@ -30,4 +30,5 @@ public class Event {
     private Boolean remote;
 
     private Date data;
+
 }
