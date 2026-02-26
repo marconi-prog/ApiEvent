@@ -9,7 +9,7 @@ import lombok.Setter;
 
 import java.util.UUID;
 
-@Table(name = "adress")
+@Table(name = "address")
 @Entity
 @Getter
 @Setter

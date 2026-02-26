@@ -10,7 +10,7 @@ import lombok.Setter;
 import java.util.UUID;
 
 @Entity
-@Table(name = "coupom")
+@Table(name = "coupon")
 @Getter
 @Setter
 @AllArgsConstructor
